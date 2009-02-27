@@ -1,0 +1,14 @@
+# Check if there are any errors in the response
+if @comment.errors.empty?
+  # Insert the new comment, highlight it and reset the form
+  page.insert_html :bottom, :comments, :partial => @comment
+  page[@comment].visual_effect :highlight
+  page[:new_comment].reset
+else
+  # Show the errors and then fade them out of view after 5 seconds
+  page.replace_html :comment_errors, error_messages_for(:comment)
+  page.delay(10) do
+    page.visual_effect :slideUp, :comment_errors
+    page.visual_effect :fade, :comment_errors
+  end
+end

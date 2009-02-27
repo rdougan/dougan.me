@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>dougan.me</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- CSS -->
+    <%= stylesheet_link_tag :all %>
+    
+    <!-- Javascript -->
+    <%= javascript_include_tag 'jquery', 'jquery.pngFix.pack', 'application' %>
+    
+    <!--
+      
+      Why hello there- welcome to my humble little space where I have
+      spent many hours sighing, smiling, laughing and crying.
+      
+      Enjoy looking through the awesome code. :)
+      
+    -->
+  </head>
+  <body>
+    
+    <div id="wrapper">
+      
+      <%= render :partial => 'index/panel' %>
+      
+      <div id="content-wrapper">
+        
+        <div id="nav">
+          <ul>
+            <li id="nav_panel"><a title="panel"><img src="/images/nav_panel.png" alt="show panel" /></a></li>
+          </ul>
+        </div>
+        
+        <div id="header">
+          <a href="/" title="dougan.me"><img src="/images/header.png" alt="dougan.me" /></a>
+        </div>
+        
+        <div id="aboutMe">
+          <img src="/images/aboutMe.png" alt="about me" />
+        </div>
+        
+        <div id="content">
+          
+          <div id="inner_wrap">
+            
+            <%= yield :layout %>
+            
+          </div>
+          
+          <div id="sidebar">
+            
+            <div id="twitter" class="sidebar">
+              <div class="header"></div>
+              <div class="content">
+                <ul>
+                  <li class="selected"><a href="#">Man this is awesome. Pure awesome.</a></li>
+                  <li><a href="#">Cannot believe how much of this I have done in one night. I might actually get this done tomorrow!</a></li>
+                  <li><a href="#">wow. got the main design coded already..</a></li>
+                  <li><a href="#">Oh I love writing sexy html/css...</a></li>
+                  <li><a href="#">2.30am. Still coding my blog design.</a></li>
+                </ul>
+              </div>
+            </div>
+          
+            <div id="flickr" class="sidebar">
+              <div class="header"></div>
+              <div class="content">
+                <a href="http://www.flickr.com/photos/27969974@N08/2852215396/" title="Picture 2">
+                  <img src="http://farm4.static.flickr.com/3018/2852215396_8df832ec13_s.jpg" alt="Picture 2" />
+                </a>
+                <a href="http://www.flickr.com/photos/27969974@N08/2817111424/" title="Uploaded - 0192008">
+                  <img src="http://farm4.static.flickr.com/3196/2817111424_3096ca7a5e_s.jpg" alt="Uploaded - 0192008" />
+                </a>
+                <a href="http://www.flickr.com/photos/27969974@N08/2801502055/" title="Uploaded - 2782008">
+                  <img src="http://farm4.static.flickr.com/3024/2801502055_64d75651dc_s.jpg" alt="Uploaded - 2782008" />
+                </a>
+                <a href="http://www.flickr.com/photos/27969974@N08/2771148686/" title="Floods in Belfast - Broadway">
+                  <img src="http://farm4.static.flickr.com/3128/2771148686_6bc7c6efcd_s.jpg" alt="Floods in Belfast - Broadway" />
+                </a>
+                <a href="http://www.flickr.com/photos/27969974@N08/2770300599/" title="Floods in Belfast - Broadway">
+                  <img src="http://farm4.static.flickr.com/3138/2770300599_2492829d10_s.jpg" alt="Floods in Belfast - Broadway" />
+                </a>
+                <a href="http://www.flickr.com/photos/27969974@N08/2770299639/" title="Floods in Belfast - Broadway">
+                  <img src="http://farm4.static.flickr.com/3044/2770299639_db6c495161_s.jpg" alt="Floods in Belfast - Broadway" />
+                </a>
+                <a href="http://www.flickr.com/photos/27969974@N08/2771146150/" title="Floods in Belfast - Broadway">
+                  <img src="http://farm4.static.flickr.com/3018/2771146150_a69280c5eb_s.jpg" alt="Floods in Belfast - Broadway" />
+                </a>
+                <a href="http://www.flickr.com/photos/27969974@N08/2766839656/" title="Muse Concert - Marlay Park Dublin">
+                  <img src="http://farm4.static.flickr.com/3185/2766839656_ab92477b0d_s.jpg" alt="Muse Concert - Marlay Park Dublin" />
+                </a>
+              </div>
+            </div>
+          
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      <div class="clearfix"></div>
+      
+      <div id="footer">
+        <img src="/images/footer1.png" title="All content &copy; Robert Dougan 2009." alt="All content &copy; Robert Dougan 2009." />
+        <img src="/images/footer2.png" title="Proudly powered by Rails." alt="Proudly powered by Rails." />
+      </div>
+      
+    </div>
+    
+  </body>
+</html>

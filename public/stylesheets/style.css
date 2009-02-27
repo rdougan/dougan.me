@@ -156,7 +156,7 @@ body {
 #wrapper #panel .panel-content #contact div.content input.text {
 	background:url(../images/pre_bg.png);
 	
-	padding:1px 3px;
+	padding:3px;
 	margin:0 0 1px 0;
 	
 	border:1px solid #000;
@@ -164,6 +164,7 @@ body {
 	-webkit-border-radius:5px;
 	
 	color:#a56fa7;
+	font-size:11px;
 }
 #wrapper #panel .panel-content #contact div.content input.text:focus {
 	border:1px solid #a56fa7;
@@ -174,7 +175,7 @@ body {
 #wrapper #panel .panel-content #contact div.content textarea {
 	background:url(../images/pre_bg.png);
 	
-	padding:1px 3px;
+	padding:3px;
 	margin:0 0 1px 0;
 	
 	width:280px;
@@ -184,6 +185,7 @@ body {
 	-webkit-border-radius:5px;
 	
 	color:#a56fa7;
+	font-size:11px;
 }
 #wrapper #panel .panel-content #contact div.content textarea:focus {
 	border:1px solid #a56fa7;
@@ -258,44 +260,49 @@ body {
 }
 
 /****************************************************************
-* post
+* inner wrap
 ****************************************************************/
-#wrapper #content-wrapper #content #post {
+#wrapper #content-wrapper #content #inner_wrap {
 	float:left;
 	
 	margin:0 10px 0 0;
 	
 	width:600px;
 }
-/* top */
-#wrapper #content-wrapper #content #post .top {
-	background:url(../images/post_top.png) no-repeat;
-	
-	height:10px;
-}
-/* background */
-#wrapper #content-wrapper #content #post .background {
+
+/****************************************************************
+* post
+****************************************************************/
+#wrapper #content-wrapper #content #inner_wrap .post {
 	background:url(../images/post_bg.png) repeat-y;
+	
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	
+	padding:10px;
+	margin-bottom:10px;
 }
+
 /* header */
-#wrapper #content-wrapper #content #post .header {
+#wrapper #content-wrapper #content #inner_wrap .post .header {
 	padding:0 10px;
 }
 /* date */
-#wrapper #content-wrapper #content #post .header .date {
+#wrapper #content-wrapper #content #inner_wrap .post .header .date {
 	float:left;
 }
-#wrapper #content-wrapper #content #post .header .date .month {
+#wrapper #content-wrapper #content #inner_wrap .post .header .date .month {
 	font-size:77%;
 	text-align:right;
 }
-#wrapper #content-wrapper #content #post .header .date .day {
+#wrapper #content-wrapper #content #inner_wrap .post .header .date .day {
 	font-size:280%;
 	text-align:right;
 	line-height:30px;
 }
 /* permalink */
-#wrapper #content-wrapper #content #post .header .permalink {
+#wrapper #content-wrapper #content #inner_wrap .post .header .permalink {
 	float:left;
 	
 	margin:0 0 0 10px;
@@ -304,11 +311,8 @@ body {
 	
 	border:1px solid #a56fa7;
 	border-width:0 0 0 1px;
-}
-#wrapper #content-wrapper #content #post .header .permalink a:link,
-#wrapper #content-wrapper #content #post .header .permalink a:active,
-#wrapper #content-wrapper #content #post .header .permalink a:visited {
-	display:block;
+	
+  display:block;
 	
 	padding:7px 0 0 10px;
 	
@@ -316,11 +320,11 @@ body {
 	font-weight:bold;
 	text-decoration:none;
 }
-#wrapper #content-wrapper #content #post .header .permalink a:hover {
+#wrapper #content-wrapper #content #inner_wrap .post .header .permalink a:hover {
 	color:#a56fa7;
 }
 /* paragraphs */
-#wrapper #content-wrapper #content #post p {
+#wrapper #content-wrapper #content #inner_wrap .post p {
 	padding:8px 10px 4px 10px;
 	
 	line-height:18px;
@@ -328,7 +332,7 @@ body {
 	color:#ebceec;
 }
 /* pre */
-#wrapper #content-wrapper #content #post pre {
+#wrapper #content-wrapper #content #inner_wrap .post pre {
 	padding:5px 10px;
 	margin:5px 10px;
 	
@@ -344,38 +348,86 @@ body {
 	overflow:auto;
 }
 /* tags */
-#wrapper #content-wrapper #content #post ul.tags {
+#wrapper #content-wrapper #content #inner_wrap .post ul.tags {
 	margin:5px 10px;
 }
-#wrapper #content-wrapper #content #post ul.tags li {
+#wrapper #content-wrapper #content #inner_wrap .post ul.tags li {
 	display:inline;
 	
 	color:#a56fa7;
 	font-size:93%;
 }
-#wrapper #content-wrapper #content #post ul.tags li a:link,
-#wrapper #content-wrapper #content #post ul.tags li a:active,
-#wrapper #content-wrapper #content #post ul.tags li a:visited {
+#wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:link,
+#wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:active,
+#wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:visited {
 	padding:0 2px;
 	
 	color:#a56fa7;
 	text-decoration:none;
 }
-#wrapper #content-wrapper #content #post ul.tags li a:hover {
+#wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:hover {
 	background:#a56fa7;
 	
 	color:#000;
 }
 
 /****************************************************************
+* comments
+****************************************************************/
+#wrapper #content-wrapper #content #inner_wrap .post.comment {
+  
+}
+
+/* new comment */
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment {
+  
+}
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment label {
+  font-size:11px;
+}
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment input,
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea {
+  background:url(../images/pre_bg.png);
+	
+	padding:3px;
+	margin:0 0 1px 0;
+	
+	width:280px;
+	
+	border:1px solid #000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+	color:#a56fa7;
+	font-size:11px;
+}
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment input:focus,
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea:focus {
+	border:1px solid #a56fa7;
+	
+	color:#fff;
+}
+
+/****************************************************************
 * sidebar
 ****************************************************************/
+#wrapper #content-wrapper #content #sidebar {
+  float:left;
+  
+  width:290px;
+}
+
 #wrapper #content-wrapper #content .sidebar {
-	float:left;
-	
+	padding:0 0 10px 0;
 	margin:0 0 10px 0;
 	
 	width:290px;
+	
+	background:url(../images/post_bg.png) repeat-y;
+	
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
 }
 #wrapper #content-wrapper #content .sidebar .header {
 	height:33px;
@@ -442,7 +494,8 @@ body {
 * footer
 ****************************************************************/
 #wrapper #content-wrapper #footer {
-	padding:5px 0 0 0;
+	padding:5px 0;
+	margin-bottom:10px;
 	
 	text-align:right;
 }

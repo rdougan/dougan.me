@@ -1,0 +1,16 @@
+<div class="post new_comment">
+  <div id="comment_errors"></div>
+  <div id="comment_notice"></div>
+
+  <% remote_form_for [@post, Comment.new] do |f| %>
+    <p>
+      <%= f.label :name, "Name" %></br >
+      <%= f.text_field :name %><br />
+      <%= f.label :email, "Email" %></br >
+      <%= f.text_field :email %><br /><br />
+      <%= f.label :message, "Message" %></br >
+      <%= f.text_area :message %>
+    </p>
+    <p><%= f.submit "Add Comment" %></p>
+  <% end %>
+</div>

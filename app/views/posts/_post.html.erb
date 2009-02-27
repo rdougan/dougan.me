@@ -1,0 +1,13 @@
+<% div_for(post, :class => 'post') do %>
+  <div class="header">
+    <div class="date">
+      <div class="month"><%= post.created_at.strftime('%B') %></div>
+      <div class="day"><%= post.created_at.strftime('%d') %></div>
+    </div>
+    <div class="permalink">
+      <%= link_to_unless_current h(post.title), archive_path(post) %>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <p><%= simple_format h(post.body) %></p>
+<% end %>
