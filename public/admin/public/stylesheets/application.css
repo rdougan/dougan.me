@@ -1,0 +1,11 @@
+.x-btn-center .x-btn-text.add     { background-image: url(../images/icons/add.png); }
+.x-btn-center .x-btn-text.edit    { background-image: url(../images/icons/edit.png); }
+.x-btn-center .x-btn-text.delete  { background-image: url(../images/icons/delete.png); }
+
+/* Icons */
+.x-btn-text.logout   { background: url(../images/icons/user_logout.png);}
+.x-btn-text.help     { background: url(../images/icons/help.png);}
+.x-btn-text.settings { background: url(../images/icons/wrench.png);}
+.x-btn-text.save     { background: url(../images/icons/tick.png);}
+.x-btn-text.cancel   { background: url(../images/icons/cancel.png);}
+.x-btn-text.refresh  { background: url(../images/icons/arrow_refresh.png);}
