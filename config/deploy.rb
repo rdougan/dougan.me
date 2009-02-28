@@ -1,4 +1,4 @@
-set :application, "dougan.me"
+set :application, "s.dougan.me"
 set :deploy_to, "/var/www/apps/#{application}"
 
 default_run_options[:pty] = true
