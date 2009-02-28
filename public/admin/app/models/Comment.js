@@ -9,7 +9,7 @@ ExtMVC.Model.define("Admin.models.Comment", {
     {name: 'post_id',    type: 'int'},
     {name: 'name',       type: 'string'},
     {name: 'email',      type: 'string'},
-    {name: 'body',       type: 'string'},
+    {name: 'message',    type: 'string'},
     {name: 'created_at', type: 'string'},
     {name: 'updated_at', type: 'string'}
   ],

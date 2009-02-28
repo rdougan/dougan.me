@@ -1,11 +1,11 @@
 /**
- * @class Admin.views.posts.CommentsTab
- * @extends ExtMVC.view.scaffold.CommentsTab
- * Grid to show all the comments for a given post
+ * @class Admin.views.posts.TagsTab
+ * @extends ExtMVC.view.scaffold.TagsTab
+ * Grid to show all the tags for a given post
  */
-Admin.views.posts.CommentsTab = Ext.extend(Ext.grid.GridPanel, {
+Admin.views.posts.TagsTab = Ext.extend(Ext.grid.GridPanel, {
   initComponent: function() {
-    this.store = this.obj.comments.findAll({autoLoad: false});
+    this.store = this.obj.tags.findAll({autoLoad: false});
     
     //load the stores only when the tab is activated for the first time
     this.on('activate', function() {
@@ -14,22 +14,12 @@ Admin.views.posts.CommentsTab = Ext.extend(Ext.grid.GridPanel, {
       };
     }, this);
     
-    // row expander
-    var expander = new Ext.grid.RowExpander({
-      tpl: new Ext.Template(
-        '<p>{message}</p>'
-      )
-    });
-    
     Ext.applyIf(this, {
-      title: 'Comments',
+      title: 'Tags',
       store: this.store,
-      cm: new Ext.grid.ColumnModel([
-        expander,
-        {header: "Name",   dataIndex: 'name',       sortable: true},
-        {header: "Email",  dataIndex: 'email',      sortable: true},
-        {header: "Posted", dataIndex: 'created_at', sortable: true}
-      ]),
+      columns: [
+        {header: "Tag", dataIndex: 'name', sortable: true}
+      ],
       listeners: {
         'click': {
           scope: this,
@@ -44,11 +34,10 @@ Admin.views.posts.CommentsTab = Ext.extend(Ext.grid.GridPanel, {
       loadMask:    true,
       tbar:        this.buildTopToolbar(),
       bbar:        this.buildBottomToolbar(this.store),
-      plugins:     expander,
       collapsible: true
     });
     
-    Admin.views.posts.CommentsTab.superclass.initComponent.apply(this, arguments);
+    Admin.views.posts.TagsTab.superclass.initComponent.apply(this, arguments);
   },
   
   /**
@@ -88,7 +77,7 @@ Admin.views.posts.CommentsTab = Ext.extend(Ext.grid.GridPanel, {
       store:       store,
       displayInfo: true,
       pageSize:    25,
-      emptyMsg:    String.format("No {0} to display", Admin.models.Comment.modelName)
+      emptyMsg:    String.format("No {0} to display", Admin.models.Tag.modelName)
     });
   },
   
@@ -99,12 +88,12 @@ Admin.views.posts.CommentsTab = Ext.extend(Ext.grid.GridPanel, {
   onDelete: function() {
     Ext.Msg.confirm(
       'Are you sure?',
-      String.format("Are you sure you want to delete this {0}?  This cannot be undone.", Admin.models.Comment.modelName),
+      String.format("Are you sure you want to delete this {0}?  This cannot be undone.", Admin.models.Tag.modelName),
       function(btn) {
         if (btn == 'yes') {
           var selected = this.getSelectionModel().getSelected();
           if (selected) {
-            ExtMVC.OS.getOS().getController('comments').fireAction('destroy', null, [selected.data.id, this.store]);
+            ExtMVC.OS.getOS().getController('tags').fireAction('destroy', null, [selected.data.id, this.store]);
           }
         };
       },

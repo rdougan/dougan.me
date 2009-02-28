@@ -20,7 +20,7 @@ Admin.views.posts.Edit = Ext.extend(Ext.TabPanel, {
     });
     
     /**
-     * @property reportsTab
+     * @property commentsTab
      * @type Ext.Panel
      * Reference to the post comments tab
      */
@@ -29,11 +29,22 @@ Admin.views.posts.Edit = Ext.extend(Ext.TabPanel, {
       objId: this.objId
     });
     
+    /**
+     * @property tagsTab
+     * @type Ext.Panel
+     * Reference to the post tags tab
+     */
+    this.tagsTab = new Admin.views.posts.TagsTab({
+      obj:   this.obj,
+      objId: this.objId
+    });
+    
     Ext.applyIf(this, {
       autoScroll: true,
       items: [
         this.editTab,
-        this.commentsTab
+        this.commentsTab,
+        this.tagsTab
       ],
       activeItem: 0,
       defaults: {

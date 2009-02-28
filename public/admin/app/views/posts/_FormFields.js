@@ -12,7 +12,7 @@ Admin.views.posts.FormFields = [
     name:       'body',
     fieldLabel: 'Body',
     xtype:      'textarea',
-    height:     250,
+    height:     400,
     anchor:     '100%'
   }
 ];

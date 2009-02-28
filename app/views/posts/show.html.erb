@@ -1,7 +1,9 @@
 <%= render :partial => @post %>
 
-<h3>Comments</h3>
 <div id="comments">
+  <div class="post comment">
+    <div class="header"></div>
+  </div>
   <%= render :partial => @post.comments %>
 </div>
 

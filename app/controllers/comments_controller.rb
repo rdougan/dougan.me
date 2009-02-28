@@ -8,10 +8,8 @@ class CommentsController < ApplicationController
     
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to @post }
         format.js
       else
-        format.html { render :action => "new" }
         format.js
       end
     end
@@ -22,8 +20,15 @@ class CommentsController < ApplicationController
     belongs_to :post
     
     response_for :index do |format|
-      format.html
       format.json {render :text => "{\"comment\": #{@current_objects.to_json}}", :content_type => 'application/json'}
+    end
+    
+    response_for :update_fails do |format|
+      format.json {render :json => {"success" => false, "errors" => @current_object.errors}, :status => 406}
+    end
+    
+    response_for :update do |format|
+      format.json {render :json => {"success" => true}}
     end
   end
 end

@@ -11,5 +11,5 @@ ExtMVC.Model.define("Admin.models.Post", {
     {name: 'created_at', type: 'string'},
     {name: 'updated_at', type: 'string'}
   ],
-  hasMany: ['Comment']
+  hasMany: ['Comment', 'Tag']
 });

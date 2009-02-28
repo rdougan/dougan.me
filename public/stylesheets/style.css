@@ -2,250 +2,250 @@
 * global
 ****************************************************************/
 * {
-	font-family:'Helvetica Neue', Arial, Verdana, serif;
-	color:#fff;
+  font-family:'Helvetica Neue', Arial, Verdana, serif;
+  color:#fff;
 }
 html,
 body {
-	background:url(../images/bg.gif);
+  background:url(../images/bg.gif);
 }
 
 /****************************************************************
 * wrapper
 ****************************************************************/
 #wrapper {
-	background:url(../images/bg_wrapper.gif) repeat-x;
-	
-	min-height:800px;
-	
-	text-align:center;
+  background:url(../images/bg_wrapper.gif) repeat-x;
+  
+  min-height:800px;
+  
+  text-align:center;
 }
 
 /****************************************************************
 * panel
 ****************************************************************/
 #wrapper #panel {
-	background:url(../images/panel_bg.png) repeat-x;
-	
-	height:161px;
-	
-	text-align:left;
+  background:url(../images/panel_bg.png) repeat-x;
+  
+  height:161px;
+  
+  text-align:left;
 }
 #wrapper #panel .panel-content {
-	margin:0 auto;
-	
-	width:900px;
+  margin:0 auto;
+  
+  width:900px;
 }
 #wrapper #panel .panel-content div div.header {
-	height:33px;
+  height:33px;
 }
 #wrapper #panel .panel-content div div.content {
-	padding:0 0 0 10px;
+  padding:0 0 0 10px;
 }
 
 /****************************************************************
 * panel:recentPosts
 ****************************************************************/
 #wrapper #panel .panel-content #recentPosts {
-	float:left;
-	
-	width:600px;
+  float:left;
+  
+  width:600px;
 }
 #wrapper #panel .panel-content #recentPosts div.header {
-	background:url(../images/recentPosts.png) no-repeat;
+  background:url(../images/recentPosts.png) no-repeat;
 }
 #wrapper #panel .panel-content #recentPosts div.content {
 }
 #wrapper #panel .panel-content #recentPosts div.content ul li {
-	float:left;
-	
-	display:block;
-	
-	width:273px;
-	max-height:105px;
-	
-	overflow:hidden;
-	
-	margin:0 10px 5px 0;
-	padding:5px;
-	
-	cursor:hand;
-	cursor:pointer;
-	
-	background:url(../images/pre_bg.png);
-	
-	border:1px solid #000;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	
-	line-height:16px;
+  float:left;
+  
+  display:block;
+  
+  width:273px;
+  max-height:105px;
+  
+  overflow:hidden;
+  
+  margin:0 10px 5px 0;
+  padding:5px;
+  
+  cursor:hand;
+  cursor:pointer;
+  
+  background:url(../images/pre_bg.png);
+  
+  border:1px solid #000;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  line-height:16px;
 }
 #wrapper #panel .panel-content #recentPosts div.content ul li .title {
-	font-weight:bold;
+  font-weight:bold;
 }
 #wrapper #panel .panel-content #recentPosts div.content ul li .date {
-	padding:0 0 0 5px;
-	
-	font-weight:normal;
-	font-size:85%;
-	color:#a56fa7;
+  padding:0 0 0 5px;
+  
+  font-weight:normal;
+  font-size:85%;
+  color:#a56fa7;
 }
 #wrapper #panel .panel-content #recentPosts div.content ul li .preview {
-	color:#a56fa7;
-	font-size:93%;
+  color:#a56fa7;
+  font-size:93%;
 }
 #wrapper #panel .panel-content #recentPosts div.footer {
-	text-align:center;
+  text-align:center;
 }
-#wrapper #panel .panel-content #recentPosts div.footer .viewAll {	
-	color:#a56fa7;
-	font-size:93%;
-	
-	cursor:hand;
-	cursor:pointer;
+#wrapper #panel .panel-content #recentPosts div.footer .viewAll {  
+  color:#a56fa7;
+  font-size:93%;
+  
+  cursor:hand;
+  cursor:pointer;
 }
 
 /****************************************************************
 * panel:tags
 ****************************************************************/
 #wrapper #panel .panel-content #tags {
-	float:left;
-	
-	width:300px;
+  float:left;
+  
+  width:300px;
 }
 #wrapper #panel .panel-content #tags div.header {
-	background:url(../images/archive.png) no-repeat;
+  background:url(../images/archive.png) no-repeat;
 }
 #wrapper #panel .panel-content #tags div.content {
 }
 #wrapper #panel .panel-content #tags div.content ul li {
-	float:left;
-	
-	margin:0 5px 0 0;
+  float:left;
+  
+  margin:0 5px 0 0;
 }
 #wrapper #panel .panel-content #tags div.content ul li a:link,
 #wrapper #panel .panel-content #tags div.content ul li a:active,
 #wrapper #panel .panel-content #tags div.content ul li a:visited {
-	display:block;
-	
-	text-decoration:none;
-	
-	width:140px;
+  display:block;
+  
+  text-decoration:none;
+  
+  width:140px;
 }
 #wrapper #panel .panel-content #tags div.content ul li a:hover {
-	background:url(../images/pre_bg.png);
-	
-	color:#a56fa7;
+  background:url(../images/pre_bg.png);
+  
+  color:#a56fa7;
 }
 
 /****************************************************************
 * panel:contact
 ****************************************************************/
 #wrapper #panel .panel-content #contact {
-	float:left;
-	
-	width:300px;
+  float:left;
+  
+  width:300px;
 }
 #wrapper #panel .panel-content #contact div.header {
-	background:url(../images/contact.png) no-repeat;
+  background:url(../images/contact.png) no-repeat;
 }
 #wrapper #panel .panel-content #contact div.content {
-	padding:0 0 0 10px;
+  padding:0 0 0 10px;
 }
 /* input.text */
 #wrapper #panel .panel-content #contact div.content input.text {
-	background:url(../images/pre_bg.png);
-	
-	padding:3px;
-	margin:0 0 1px 0;
-	
-	border:1px solid #000;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	
-	color:#a56fa7;
-	font-size:11px;
+  background:url(../images/pre_bg.png);
+  
+  padding:3px;
+  margin:0 0 1px 0;
+  
+  border:1px solid #000;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  color:#a56fa7;
+  font-size:11px;
 }
 #wrapper #panel .panel-content #contact div.content input.text:focus {
-	border:1px solid #a56fa7;
-	
-	color:#fff;
+  border:1px solid #a56fa7;
+  
+  color:#fff;
 }
 /* textarea */
 #wrapper #panel .panel-content #contact div.content textarea {
-	background:url(../images/pre_bg.png);
-	
-	padding:3px;
-	margin:0 0 1px 0;
-	
-	width:280px;
-	
-	border:1px solid #000;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	
-	color:#a56fa7;
-	font-size:11px;
+  background:url(../images/pre_bg.png);
+  
+  padding:3px;
+  margin:0 0 1px 0;
+  
+  width:280px;
+  
+  border:1px solid #000;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  color:#a56fa7;
+  font-size:11px;
 }
 #wrapper #panel .panel-content #contact div.content textarea:focus {
-	border:1px solid #a56fa7;
-	
-	color:#fff;
+  border:1px solid #a56fa7;
+  
+  color:#fff;
 }
 /* input.submit */
 #wrapper #panel .panel-content #contact div.content input.submit {
-	background:url(../images/pre_bg.png);
-	
-	padding:3px 5px;
-	margin:0 0 1px 0;
-	
-	border:1px solid #000;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	
-	cursor:pointer;
-	cursor:hand;
-	
-	font-size:93%;
-	color:#a56fa7;
+  background:url(../images/pre_bg.png);
+  
+  padding:3px 5px;
+  margin:0 0 1px 0;
+  
+  border:1px solid #000;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  cursor:pointer;
+  cursor:hand;
+  
+  font-size:93%;
+  color:#a56fa7;
 }
 #wrapper #panel .panel-content #contact div.content input.submit:hover {
-	border:1px solid #a56fa7;
-	
-	color:#fff;
+  border:1px solid #a56fa7;
+  
+  color:#fff;
 }
 
 /****************************************************************
 * content-wrapper
 ****************************************************************/
 #content-wrapper {
-	margin:0 auto;
-	
-	width:900px;
-	
-	text-align:left;
+  margin:0 auto;
+  
+  width:900px;
+  
+  text-align:left;
 }
 
 /****************************************************************
 * nav (for panel)
 ****************************************************************/
 #wrapper #content-wrapper #nav {
-	text-align:right;
+  text-align:right;
 }
 #wrapper #content-wrapper #nav ul {
 }
 #wrapper #content-wrapper #nav ul li {
-	display:inline;
-	
-	cursor:pointer;
-	cursor:hand;
+  display:inline;
+  
+  cursor:pointer;
+  cursor:hand;
 }
 
 /****************************************************************
 * header
 ****************************************************************/
 #wrapper #content-wrapper #header {
-	margin:0 0 7px 0;
+  margin:0 0 7px 0;
 }
 
 /****************************************************************
@@ -256,131 +256,153 @@ body {
 
 /* content */
 #wrapper #content-wrapper #content {
-	margin:7px 0 0 0;
+  margin:7px 0 0 0;
 }
 
 /****************************************************************
 * inner wrap
 ****************************************************************/
 #wrapper #content-wrapper #content #inner_wrap {
-	float:left;
-	
-	margin:0 10px 0 0;
-	
-	width:600px;
+  float:left;
+  
+  margin:0 10px 0 0;
+  
+  width:600px;
 }
 
 /****************************************************************
 * post
 ****************************************************************/
 #wrapper #content-wrapper #content #inner_wrap .post {
-	background:url(../images/post_bg.png) repeat-y;
-	
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	
-	padding:10px;
-	margin-bottom:10px;
+  background:url(../images/post_bg.png) repeat-y;
+  
+  border-radius:10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  
+  padding:10px;
+  margin-bottom:10px;
 }
 
 /* header */
 #wrapper #content-wrapper #content #inner_wrap .post .header {
-	padding:0 10px;
+  
 }
 /* date */
 #wrapper #content-wrapper #content #inner_wrap .post .header .date {
-	float:left;
+  float:left;
 }
 #wrapper #content-wrapper #content #inner_wrap .post .header .date .month {
-	font-size:77%;
-	text-align:right;
+  font-size:77%;
+  text-align:right;
 }
 #wrapper #content-wrapper #content #inner_wrap .post .header .date .day {
-	font-size:280%;
-	text-align:right;
-	line-height:30px;
+  font-size:280%;
+  text-align:right;
+  line-height:30px;
 }
 /* permalink */
 #wrapper #content-wrapper #content #inner_wrap .post .header .permalink {
-	float:left;
-	
-	margin:0 0 0 10px;
-	
-	height:44px;
-	
-	border:1px solid #a56fa7;
-	border-width:0 0 0 1px;
-	
+  float:left;
+  
+  margin:0 0 0 10px;
+  
+  height:44px;
+  
+  border:1px solid #a56fa7;
+  border-width:0 0 0 1px;
+  
   display:block;
-	
-	padding:7px 0 0 10px;
-	
-	font-size:167%;
-	font-weight:bold;
-	text-decoration:none;
+  
+  padding:7px 0 0 10px;
+  
+  font-size:167%;
+  font-weight:bold;
+  text-decoration:none;
 }
 #wrapper #content-wrapper #content #inner_wrap .post .header .permalink a:hover {
-	color:#a56fa7;
+  color:#a56fa7;
 }
 /* paragraphs */
 #wrapper #content-wrapper #content #inner_wrap .post p {
-	padding:8px 10px 4px 10px;
-	
-	line-height:18px;
-	text-align:justify;
-	color:#ebceec;
+  padding:10px 0 0 0;
+  
+  line-height:18px;
+  text-align:justify;
+  color:#ebceec;
 }
 /* pre */
 #wrapper #content-wrapper #content #inner_wrap .post pre {
-	padding:5px 10px;
-	margin:5px 10px;
-	
-	background:url(../images/pre_bg.png);
-	
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	
-	line-height:16px;
-	font-family:"Consolas", "Courier New", Courier, mono, serif;
-	font-size:93%;
-	
-	overflow:auto;
+  padding:5px 10px;
+  margin:5px 10px;
+  
+  background:url(../images/pre_bg.png);
+  
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  
+  line-height:16px;
+  font-family:"Consolas", "Courier New", Courier, mono, serif;
+  font-size:93%;
+  
+  overflow:auto;
 }
 /* tags */
 #wrapper #content-wrapper #content #inner_wrap .post ul.tags {
-	margin:5px 10px;
+  margin:5px 10px;
 }
 #wrapper #content-wrapper #content #inner_wrap .post ul.tags li {
-	display:inline;
-	
-	color:#a56fa7;
-	font-size:93%;
+  display:inline;
+  
+  color:#a56fa7;
+  font-size:93%;
 }
 #wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:link,
 #wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:active,
 #wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:visited {
-	padding:0 2px;
-	
-	color:#a56fa7;
-	text-decoration:none;
+  padding:0 2px;
+  
+  color:#a56fa7;
+  text-decoration:none;
 }
 #wrapper #content-wrapper #content #inner_wrap .post ul.tags li a:hover {
-	background:#a56fa7;
-	
-	color:#000;
+  background:#a56fa7;
+  
+  color:#000;
 }
 
 /****************************************************************
 * comments
 ****************************************************************/
+/* comments */
 #wrapper #content-wrapper #content #inner_wrap .post.comment {
   
+}
+#wrapper #content-wrapper #content #inner_wrap .post.comment .header {
+  background:url(../images/header_comments.png) no-repeat;
+  
+  height:15px;
+}
+
+#wrapper #content-wrapper #content #inner_wrap .post.comment .about {
+  color:#a56fa7;
+  font-size:11px;
+}
+#wrapper #content-wrapper #content #inner_wrap .post.comment .about span {
+  font-weight:bold;
+}
+#wrapper #content-wrapper #content #inner_wrap .post.comment p {
+  padding:0;
 }
 
 /* new comment */
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment {
   
+}
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment .header {
+  background:url(../images/header_new_comment.png) no-repeat;
+  
+  height:15px;
 }
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment label {
   font-size:11px;
@@ -388,24 +410,24 @@ body {
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment input,
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea {
   background:url(../images/pre_bg.png);
-	
-	padding:3px;
-	margin:0 0 1px 0;
-	
-	width:280px;
-	
-	border:1px solid #000;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	
-	color:#a56fa7;
-	font-size:11px;
+  
+  padding:3px;
+  margin:0 0 1px 0;
+  
+  width:280px;
+  
+  border:1px solid #000;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  color:#a56fa7;
+  font-size:11px;
 }
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment input:focus,
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea:focus {
-	border:1px solid #a56fa7;
-	
-	color:#fff;
+  border:1px solid #a56fa7;
+  
+  color:#fff;
 }
 
 /****************************************************************
@@ -418,30 +440,30 @@ body {
 }
 
 #wrapper #content-wrapper #content .sidebar {
-	padding:0 0 10px 0;
-	margin:0 0 10px 0;
-	
-	width:290px;
-	
-	background:url(../images/post_bg.png) repeat-y;
-	
-	border-radius:10px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
+  padding:10px;
+  margin:0 0 10px 0;
+  
+  width:290px;
+  
+  background:url(../images/post_bg.png) repeat-y;
+  
+  border-radius:10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
 }
 #wrapper #content-wrapper #content .sidebar .header {
-	height:33px;
+  height:22px;
 }
 #wrapper #content-wrapper #content .sidebar .background {
-	background:url(../images/sidebar_bg.png) no-repeat;
+  background:url(../images/sidebar_bg.png) no-repeat;
 }
 #wrapper #content-wrapper #content .sidebar .content {
-	padding:2px 12px;
+  padding:2px 0;
 }
 #wrapper #content-wrapper #content .sidebar .bottom {
-	background:url(../images/sidebar_bottom.png) no-repeat;
-	
-	height:10px;
+  background:url(../images/sidebar_bottom.png) no-repeat;
+  
+  height:10px;
 }
 #wrapper #content-wrapper #content .sidebar ul {
 }
@@ -450,69 +472,69 @@ body {
 * sidebar:twitter
 ****************************************************************/
 #wrapper #content-wrapper #content #twitter.sidebar .header {
-	background:url(../images/twitter.png) no-repeat;
+  background:url(../images/header_twitter.png) no-repeat;
 }
 #wrapper #content-wrapper #content #twitter.sidebar li a:link,
 #wrapper #content-wrapper #content #twitter.sidebar li a:active,
 #wrapper #content-wrapper #content #twitter.sidebar li a:visited {
-	display:block;
-	
-	padding:2px 0;
-	
-	color:#a56fa7;
-	text-decoration:none;
-	font-size:85%;
+  display:block;
+  
+  padding:2px 0;
+  
+  color:#a56fa7;
+  text-decoration:none;
+  font-size:85%;
 }
 #wrapper #content-wrapper #content #twitter.sidebar li.selected a:link,
 #wrapper #content-wrapper #content #twitter.sidebar li.selected a:active,
 #wrapper #content-wrapper #content #twitter.sidebar li.selected a:visited {
-	font-size:138.5%;
-	color:#fff;
+  font-size:138.5%;
+  color:#fff;
 }
 
 /****************************************************************
 * sidebar:flickr
 ****************************************************************/
 #wrapper #content-wrapper #content #flickr.sidebar .header {
-	background:url(../images/flickr.png) no-repeat;
+  background:url(../images/header_flickr.png) no-repeat;
 }
 #wrapper #content-wrapper #content #flickr.sidebar .content a {
 
 }
 #wrapper #content-wrapper #content #flickr.sidebar .content img {
-	width:60px;
-	height:60px;
-	
-	margin:0 1px 2px 0;
-	
-	border:1px solid #fff;
-	-moz-border-radius:2px;
-	-webkit-border-radius:2px;
+  width:60px;
+  height:60px;
+  
+  margin:0 1px 2px 0;
+  
+  border:1px solid #fff;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
 }
 
 /****************************************************************
 * footer
 ****************************************************************/
 #wrapper #content-wrapper #footer {
-	padding:5px 0;
-	margin-bottom:10px;
-	
-	text-align:right;
+  padding:5px 0;
+  margin-bottom:10px;
+  
+  text-align:right;
 }
 
 /****************************************************************
 * loading
 ****************************************************************/
 .loading {
-	text-align:center;
+  text-align:center;
 }
 .loading img {
-	margin:45px 0 0 0;
+  margin:45px 0 0 0;
 }
 
 /****************************************************************
 * clearfix
 ****************************************************************/
 .clearfix {
-	clear:both;
+  clear:both;
 }
