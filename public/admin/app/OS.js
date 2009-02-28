@@ -14,7 +14,7 @@ Admin.OS = Ext.extend(ExtMVC.OS, {
       menu: {
         items: [
           { xtype: 'menu_header', title: 'Overview' },
-          this.router.linkTo({controller: 'index', action: 'index'}, {text: 'Welcome'}),
+          this.router.linkTo({controller: 'index', action: 'index'}, {text: 'Dashboard'}),
           
           { xtype: 'menu_header', title: 'Posts' },
           this.router.linkTo({controller: 'posts', action: 'index'}, {text: 'Show All'}),

@@ -859,6 +859,10 @@ Ext.extend(ExtMVC.Controller, Ext.util.Observable, {
         this.addTo.doLayout();
         return v;
       };
+      
+      // XXX
+      return v;
+      // TODO there needs to be some kind of exception here if nothing happens
     };
   },
   
@@ -1166,7 +1170,6 @@ Ext.ns('ExtMVC.plugin.CrudController');
      * @param {ExtMVC.Model} modelObj The found model object
      */
     onFindSuccess: function(modelObj) {
-      console.log(this.form);
       this.editModelObj = modelObj;
       this.form.getForm().loadRecord(modelObj);
       
@@ -4281,49 +4284,14 @@ Admin.OS = Ext.extend(ExtMVC.OS, {
       menu: {
         items: [
           { xtype: 'menu_header', title: 'Overview' },
-          this.router.linkTo({controller: 'index', action: 'index'}, {text: 'Welcome'}),
+          this.router.linkTo({controller: 'index', action: 'index'}, {text: 'Dashboard'}),
           
           { xtype: 'menu_header', title: 'Posts' },
-          this.router.linkTo({controller: 'posts', action: 'index'}, {text: 'Show All'})
+          this.router.linkTo({controller: 'posts', action: 'index'}, {text: 'Show All'}),
+          this.router.linkTo({controller: 'posts', action: 'new'}, {text: 'New'})
         ]
       },
-      useTabs: false,
-      topBar: {
-        border: false,
-        layout: 'fit',
-        height:  26,
-        items: [
-          {
-            type:   'panel',
-            border: false,
-            tbar: [
-              {xtype: 'tbtext', text: '&nbsp;Kypp.me.uk -  Administration'},
-              '->',
-              {
-                text:    'Settings',
-                cls:     'x-btn-text-icon settings',
-                iconCls: 'settings',
-                disabled: true
-              }, '-',
-              this.router.linkTo({controller: 'index', action: 'help'}, {
-                text:    'Help',
-                cls:     'x-btn-text-icon help',
-                iconCls: 'help',
-                disabled: true
-              }), '-',
-              {
-                text:    'Logout',
-                cls:     'x-btn-text-icon logout',
-                iconCls: 'logout',
-                handler: function() {
-                  window.location = "/logout";
-                }
-              }
-            ]
-          }
-        ]
-
-      }
+      useTabs: false
     };
   }
 });

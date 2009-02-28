@@ -3,24 +3,24 @@
 
 <html>
   <head>
-    <meta content='text/html; charset=ISO-8859-1' http-equiv='Content-Type' />
-    <link href='admin/public/stylesheets/ext-all.css' rel='stylesheet' type='text/css' />
-    <link href='admin/vendor/plugins/LeftMenuViewportBuilder/public/stylesheets/left-menu-viewport-layout.css' rel='stylesheet' type='text/css' />
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type" />
+    <link href="public/stylesheets/ext-all.css" rel="stylesheet" type="text/css" />
+    <link href="vendor/plugins/LeftMenuViewportBuilder/public/stylesheets/left-menu-viewport-layout.css" rel="stylesheet" type="text/css" />
     <title>ExtJS MVC Application</title>
   </head>
   <body>
     <!-- Core Ext and Ext MVC libraries -->
     <div id="ext-mvc-core">
-      <script type="text/javascript" src="admin/vendor/ext/adapter/ext/ext-base.js" class="concat-ignore"></script>
-      <script type="text/javascript" src="admin/vendor/ext/ext-all-debug.js" class="concat-ignore"></script>
-      <script type="text/javascript" src="admin/vendor/mvc/ext-mvc-all.js"></script>
+      <script type="text/javascript" src="vendor/ext/adapter/ext/ext-base.js" class="concat-ignore"></script>
+      <script type="text/javascript" src="vendor/ext/ext-all-debug.js" class="concat-ignore"></script>
+      <script type="text/javascript" src="vendor/mvc/ext-mvc-all.js"></script>
     </div>
     
     <!-- Configuration files -->
     <div id="ext-mvc-config">
-      <script type="text/javascript" src="admin/config/initialize.js"></script>
-      <script type="text/javascript" src="admin/config/database.js"></script>
-      <script type="text/javascript" src="admin/config/routes.js"></script>
+      <script type="text/javascript" src="config/initialize.js"></script>
+      <script type="text/javascript" src="config/database.js"></script>
+      <script type="text/javascript" src="config/routes.js"></script>
     </div>
     
     <!-- Include any third party libraries/plugin files here -->
@@ -28,41 +28,41 @@
       
       <!-- Installed from vendor/plugins/LeftMenuViewportBuilder -->
       <div id="ext-mvc-plugins-LeftMenuViewportBuilder">
-        <script type="text/javascript" src="admin/vendor/plugins/LeftMenuViewportBuilder/LeftMenuViewportBuilder.js"></script>
-        <script type="text/javascript" src="admin/vendor/plugins/LeftMenuViewportBuilder/MenuLink.js"></script>
-        <script type="text/javascript" src="admin/vendor/plugins/LeftMenuViewportBuilder/MenuHeader.js"></script>
+        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/LeftMenuViewportBuilder.js"></script>
+        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/MenuLink.js"></script>
+        <script type="text/javascript" src="vendor/plugins/LeftMenuViewportBuilder/MenuHeader.js"></script>
       </div>
       
       <!-- Installed from vendor/plugins/RowExpander -->
       <div id="ext-mvc-plugins-RowExpander">
-        <script type="text/javascript" src="admin/vendor/plugins/RowExpander/RowExpander.js"></script>
+        <script type="text/javascript" src="vendor/plugins/RowExpander/RowExpander.js"></script>
       </div>
       
     </div>
     
     <!-- Include your application files here -->
     <div id="ext-mvc-application">
-      <script type="text/javascript" src="admin/app/OS.js"></script>
+      <script type="text/javascript" src="app/OS.js"></script>
       
       <div id="ext-mvc-application-models">
-        <script type="text/javascript" src="admin/app/models/Post.js"></script>
-        <script type="text/javascript" src="admin/app/models/Comment.js"></script>
+        <script type="text/javascript" src="app/models/Post.js"></script>
+        <script type="text/javascript" src="app/models/Comment.js"></script>
       </div>
       
       <div id="ext-mvc-application-controllers">
-        <script type="text/javascript" src="admin/app/controllers/CommentsController.js"></script>
-        <script type="text/javascript" src="admin/app/controllers/IndexController.js"></script>
-        <script type="text/javascript" src="admin/app/controllers/PostsController.js"></script>
+        <script type="text/javascript" src="app/controllers/CommentsController.js"></script>
+        <script type="text/javascript" src="app/controllers/IndexController.js"></script>
+        <script type="text/javascript" src="app/controllers/PostsController.js"></script>
       </div>
       
       <div id="ext-mvc-application-views">
-        <script type="text/javascript" src="admin/app/views/index/Index.js"></script>
+        <script type="text/javascript" src="app/views/index/Index.js"></script>
         
-        <script type="text/javascript" src="admin/app/views/posts/_FormFields.js"></script>
-        <script type="text/javascript" src="admin/app/views/posts/Index.js"></script>
-        <script type="text/javascript" src="admin/app/views/posts/Edit.js"></script>
-        <script type="text/javascript" src="admin/app/views/posts/EditFormTab.js"></script>
-        <script type="text/javascript" src="admin/app/views/posts/CommentsTab.js"></script>
+        <script type="text/javascript" src="app/views/posts/_FormFields.js"></script>
+        <script type="text/javascript" src="app/views/posts/Index.js"></script>
+        <script type="text/javascript" src="app/views/posts/Edit.js"></script>
+        <script type="text/javascript" src="app/views/posts/EditFormTab.js"></script>
+        <script type="text/javascript" src="app/views/posts/CommentsTab.js"></script>
       </div>
     </div>
   </body>
