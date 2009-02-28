@@ -1,0 +1,3 @@
+[submodule "public/admin/vendor/mvc"]
+	path = public/admin/vendor/mvc
+	url = git://github.com/extmvc/extmvc.git
