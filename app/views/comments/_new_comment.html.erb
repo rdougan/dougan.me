@@ -6,13 +6,18 @@
 
   <% remote_form_for [@post, Comment.new] do |f| %>
     <p>
-      <%= f.label :name, "Name" %></br >
-      <%= f.text_field :name %><br />
-      <%= f.label :email, "Email" %></br >
-      <%= f.text_field :email %><br /><br />
-      <%= f.label :message, "Message" %></br >
-      <%= f.text_area :message %>
+      <%= f.label :name, "Name" %>
+      <%= f.text_field :name %>
     </p>
-    <p><%= f.submit "Add Comment" %></p>
+    <p>
+      <%= f.label :email, "Email" %>
+      <%= f.text_field :email %>
+    </p>
+    <p>
+      <%= f.text_area(:message, :rows => 5) %>
+    </p>
+    <p class="submit">
+      <%= f.submit "Add Comment" %>
+    </p>
   <% end %>
 </div>

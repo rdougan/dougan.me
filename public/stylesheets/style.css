@@ -2,7 +2,7 @@
 * global
 ****************************************************************/
 * {
-  font-family:'Helvetica Neue', Arial, Verdana, serif;
+  font-family:'Helvetica Neue', Helvetica, Arial, Verdana, serif;
   color:#fff;
 }
 html,
@@ -413,7 +413,11 @@ textarea {
   height:15px;
 }
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment label {
+  display:inline-block;
+  
   font-size:11px;
+  
+  width:33px;
 }
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment input,
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea {
@@ -437,6 +441,15 @@ textarea {
   
   color:#fff;
 }
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment input {
+  width:534px;
+}
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea {
+  width:572px;
+}
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea {
+  width:572px;
+}
 
 /****************************************************************
 * sidebar
@@ -444,14 +457,14 @@ textarea {
 #wrapper #content-wrapper #content #sidebar {
   float:left;
   
-  width:290px;
+  width:270px;
 }
 
 #wrapper #content-wrapper #content .sidebar {
   padding:10px;
   margin:0 0 10px 0;
   
-  width:290px;
+  width:270px;
   
   background:url(../images/post_bg.png) repeat-y;
   
@@ -506,6 +519,9 @@ textarea {
 #wrapper #content-wrapper #content #flickr.sidebar .header {
   background:url(../images/header_flickr.png) no-repeat;
 }
+#wrapper #content-wrapper #content #flickr.sidebar .content {
+  padding-left:1px;
+}
 #wrapper #content-wrapper #content #flickr.sidebar .content a {
 
 }
@@ -513,7 +529,7 @@ textarea {
   width:60px;
   height:60px;
   
-  margin:0 1px 2px 0;
+  margin:0 2px 2px 0;
   
   border:1px solid #fff;
   -moz-border-radius:2px;
