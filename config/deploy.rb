@@ -1,8 +1,9 @@
 set :application, "s.dougan.me"
 set :deploy_to, "/var/www/apps/#{application}"
 
+set :rake, "/usr/local/rubygems/gems/bin/rake"
+
 default_run_options[:pty] = true
-set :use_sudo, true
 
 set :user, "deploy"
 set :runner, user
@@ -28,3 +29,7 @@ end
 
 after "deploy:update_code", "deploy:symlink_shared"
 after :deploy, "deploy:restart"
+
+task :debug_env do
+  run "env"
+end
