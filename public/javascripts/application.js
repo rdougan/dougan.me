@@ -185,9 +185,38 @@ function sidebar_Init() {
 /****************************************************************
 * sidebar:twitter
 ****************************************************************/
+var tweets = [];
+/* custom twitter callback method which adds all tweets into an array */
+function twitterCallback2(obj) {
+  var twitters = obj;
+  for (var i=0; i < twitters.length; i++) {
+    var t = twitters[i];
+    
+    // Check if it is a reply
+    if (t.text.substr(0, 1) != "@") {
+      // Push the tweet if it is not a reply
+      tweets.push({
+        id:         t.id,
+        text:       t.text,
+        created_at: t.created_at
+      });
+    };
+  };
+};
 /* allows you to rollover each tweet */
 function sidebar_twitter_Init() {
-  
+  // Load the tweets and add them into the twitter side panel
+  $.getScript("http://twitter.com/statuses/user_timeline/rdougan.json?callback=twitterCallback2&count=10", function() {
+    // Loop through each of the tweets
+    for (var i = 0; i < tweets.length; i++) {
+      var t = tweets[i];
+      
+      console.log(t);
+      
+      $('#twitter .content ul').append('<li><a href="http://twitter.com/rdougan/status/' + t.id + '">' + t.text + '</a></li>');
+      $('#twitter .content ul li:first').addClass('selected');
+    };
+  });
 };
 
 /****************************************************************
@@ -197,12 +226,21 @@ function sidebar_twitter_Init() {
 function sidebar_flickr_Init() {
   var iOpacity = 0.3;
   
-  // change opacity on page load
-  $('#flickr img').css('opacity', iOpacity);
-  
-  $('#flickr img').hover(function() {
-    $(this).fadeTo(250, 1);
-  }, function() {
-    $(this).fadeTo(250, iOpacity);
+  // Load the photos using the jquery flickr plugin
+  $("#flickr").flickr({
+    api_key:  "66d40a71c9038b033d5e80fc1337b6a1",
+    type:     "search",
+    user_id:  "27969974@N08",
+    per_page: 12,
+    callback: function() {
+      // change opacity on page load
+      $('#flickr img').css('opacity', iOpacity);
+
+      $('#flickr img').hover(function() {
+        $(this).fadeTo(250, 1);
+      }, function() {
+        $(this).fadeTo(250, iOpacity);
+      });
+    }
   });
 };

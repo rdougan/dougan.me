@@ -502,14 +502,20 @@ textarea {
   padding:2px 0;
   
   color:#a56fa7;
-  text-decoration:none;
   font-size:85%;
+  text-decoration:none;
+}
+#wrapper #content-wrapper #content #twitter.sidebar li a:hover {
+  color:#5f3461;
 }
 #wrapper #content-wrapper #content #twitter.sidebar li.selected a:link,
 #wrapper #content-wrapper #content #twitter.sidebar li.selected a:active,
 #wrapper #content-wrapper #content #twitter.sidebar li.selected a:visited {
-  font-size:138.5%;
   color:#fff;
+  font-size:138.5%;
+}
+#wrapper #content-wrapper #content #twitter.sidebar li.selected a:hover {
+  color:#bbb;
 }
 
 /****************************************************************
@@ -518,13 +524,13 @@ textarea {
 #wrapper #content-wrapper #content #flickr.sidebar .header {
   background:url(../images/header_flickr.png) no-repeat;
 }
-#wrapper #content-wrapper #content #flickr.sidebar .content {
+#wrapper #content-wrapper #content #flickr.sidebar ul {
   padding-left:1px;
 }
-#wrapper #content-wrapper #content #flickr.sidebar .content a {
-
+#wrapper #content-wrapper #content #flickr.sidebar ul li {
+  display:inline;
 }
-#wrapper #content-wrapper #content #flickr.sidebar .content img {
+#wrapper #content-wrapper #content #flickr.sidebar ul img {
   width:60px;
   height:60px;
   
@@ -533,6 +539,10 @@ textarea {
   border:1px solid #fff;
   -moz-border-radius:2px;
   -webkit-border-radius:2px;
+  
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  filter:alpha(opacity=30);
 }
 
 /****************************************************************
