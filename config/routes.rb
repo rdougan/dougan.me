@@ -6,6 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   # The priority is based upon order of creation: first created -> highest priority.
   
   map.resources :index
+  map.resources :portfolio
   
   # Admin
   map.admin '/acp', :controller => 'index', :action => 'admin'

@@ -211,8 +211,6 @@ function sidebar_twitter_Init() {
     for (var i = 0; i < tweets.length; i++) {
       var t = tweets[i];
       
-      console.log(t);
-      
       $('#twitter .content ul').append('<li><a href="http://twitter.com/rdougan/status/' + t.id + '">' + t.text + '</a></li>');
       $('#twitter .content ul li:first').addClass('selected');
     };
