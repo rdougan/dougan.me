@@ -1,0 +1,6 @@
+<% @posts = Post.find(:all, :limit => 6)  %>
+<% @posts.each do |post| %> 
+  <li>
+    <div class="title"><%= link_to truncate(post.title, :length => 35), archive_path(post) %><span class="date"><%= post.created_at.strftime('%d/%m/%Y') %></span></div>
+  </li>
+<% end %>

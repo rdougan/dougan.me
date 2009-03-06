@@ -5,29 +5,12 @@
             <div class="header"></div>
             <div class="content">
               <ul>
-                <li>
-                  <div class="title">This is a recent post title<span class="date">01/05/2008</span></div>
-                </li>
-                <li>
-                  <div class="title">This is a recent post title<span class="date">01/05/2008</span></div>
-                </li>
-                <li>
-                  <div class="title">This is a recent post title<span class="date">01/05/2008</span></div>
-                </li>
-                <li>
-                  <div class="title">This is a recent post title<span class="date">01/05/2008</span></div>
-                </li>
-                <li>
-                  <div class="title">This is a recent post title<span class="date">01/05/2008</span></div>
-                </li>
-                <li>
-                  <div class="title">This is a recent post title<span class="date">01/05/2008</span></div>
-                </li>
+                <%= render :partial => 'posts/recent_posts' %>
               </ul>
               <div class="clearfix"></div>
             </div>
             <div class="footer">
-              <div class="viewAll"><%= link_to 'View All', archive_path %></div>
+              <div class="view_all"><%= link_to 'View All', '/archive' %></div>
             </div>
           </div>
           

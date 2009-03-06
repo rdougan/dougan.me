@@ -21,7 +21,38 @@ Admin.OS = Ext.extend(ExtMVC.OS, {
           this.router.linkTo({controller: 'posts', action: 'new'}, {text: 'New'})
         ]
       },
-      useTabs: false
+      useTabs: false,
+      topBar: {
+        border: false,
+        layout: 'fit',
+        height:  26,
+        items: [
+          {
+            type:   'panel',
+            border: false,
+            tbar: [
+              {xtype: 'tbtext', text: 'dougan.me'},
+              '->',
+              {
+                text:    'Home',
+                cls:     'x-btn-text-icon home',
+                handler: function() {
+                  window.location = "/";
+                }
+              }, '-',
+              {
+                text:    'Logout',
+                cls:     'x-btn-text-icon logout',
+                iconCls: 'logout',
+                handler: function() {
+                  window.location = "/logout";
+                }
+              }
+            ]
+          }
+        ]
+
+      }
     };
   }
 });

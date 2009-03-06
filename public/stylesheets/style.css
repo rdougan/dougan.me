@@ -38,6 +38,8 @@ textarea {
   height:161px;
   
   text-align:left;
+  
+  position:relative;
 }
 #wrapper #panel .panel-content {
   margin:0 auto;
@@ -88,9 +90,10 @@ textarea {
   
   line-height:16px;
 }
-#wrapper #panel .panel-content #recentPosts div.content ul li .title {
-  font-weight:bold;
-}
+#wrapper #panel .panel-content #recentPosts div.content ul li .title { font-weight:bold; }
+#wrapper #panel .panel-content #recentPosts div.content ul li .title a:link,
+#wrapper #panel .panel-content #recentPosts div.content ul li .title a:visited,
+#wrapper #panel .panel-content #recentPosts div.content ul li .title a:active { text-decoration:none; }
 #wrapper #panel .panel-content #recentPosts div.content ul li .date {
   padding:0 0 0 5px;
   
@@ -105,9 +108,14 @@ textarea {
 #wrapper #panel .panel-content #recentPosts div.footer {
   text-align:center;
 }
-#wrapper #panel .panel-content #recentPosts div.footer .viewAll {  
+#wrapper #panel .panel-content #recentPosts div.footer .view_all,
+#wrapper #panel .panel-content #recentPosts div.footer .view_all a:link,
+#wrapper #panel .panel-content #recentPosts div.footer .view_all a:visited,
+#wrapper #panel .panel-content #recentPosts div.footer .view_all a:active {
   color:#a56fa7;
   font-size:93%;
+  text-decoration:none;
+  text-transform:lowercase;
   
   cursor:hand;
   cursor:pointer;
@@ -232,6 +240,8 @@ textarea {
   width:900px;
   
   text-align:left;
+  
+  position:relative;
 }
 
 /****************************************************************
@@ -290,11 +300,6 @@ textarea {
   
   padding:10px;
   margin-bottom:10px;
-}
-
-/* header */
-#wrapper #content-wrapper #content #inner_wrap .post .header {
-  
 }
 /* date */
 #wrapper #content-wrapper #content #inner_wrap .post .header .date {
@@ -402,16 +407,13 @@ textarea {
 #wrapper #content-wrapper #content #inner_wrap .post.comment p {
   padding:0;
 }
-
 /* new comment */
-#wrapper #content-wrapper #content #inner_wrap .post.new_comment {
-  
-}
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment .header {
   background:url(../images/header_new_comment.png) no-repeat;
   
   height:15px;
 }
+/* fields */
 #wrapper #content-wrapper #content #inner_wrap .post.new_comment label {
   display:inline-block;
   
@@ -441,14 +443,11 @@ textarea {
   
   color:#fff;
 }
-#wrapper #content-wrapper #content #inner_wrap .post.new_comment input {
-  width:534px;
-}
-#wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea {
-  width:572px;
-}
-#wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea {
-  width:572px;
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment input { width:534px; }
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment textarea { width:572px; }
+/* submit button */
+#wrapper #content-wrapper #content #inner_wrap .post.new_comment .submit #comment_submit {
+  width:100%;
 }
 
 /****************************************************************

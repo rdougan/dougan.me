@@ -8,7 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :index
   
   # Admin
-  map.admin '/admin', :controller => 'index', :action => 'admin'
+  map.admin '/acp', :controller => 'index', :action => 'admin'
   
   # Archive
   map.with_options :controller => 'posts' do |a|
