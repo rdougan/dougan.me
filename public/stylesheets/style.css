@@ -85,9 +85,9 @@ textarea {
   
   background:url(../images/pre_bg.png);
   
-  border:1px solid #000;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
+  border-radius:10px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
   
   line-height:16px;
 }
@@ -337,17 +337,20 @@ textarea {
   
   margin:0 0 0 10px;
   
-  height:44px;
+  height:35px;
   
   border:1px solid #a56fa7;
   border-width:0 0 0 1px;
   
   display:block;
   
-  padding:7px 0 0 10px;
+  padding:10px 0 0 10px;
   
   font-size:167%;
   font-weight:bold;
+  text-decoration:none;
+}
+#wrapper #content-wrapper #content #inner_wrap .post .header .permalink a {
   text-decoration:none;
 }
 #wrapper #content-wrapper #content #inner_wrap .post .header .permalink a:hover {
@@ -399,6 +402,19 @@ textarea {
   background:#a56fa7;
   
   color:#000;
+}
+/* read more */
+#wrapper #content-wrapper #content #inner_wrap .post a.read_more {
+  display:block;
+  
+  padding:5px 0 0 0;
+  
+  color:#a56fa7;
+  font-size:12px;
+  text-decoration:none;
+}
+#wrapper #content-wrapper #content #inner_wrap .post a.read_more:hover {
+  text-decoration:underline;
 }
 
 /****************************************************************
@@ -555,6 +571,30 @@ textarea {
   opacity: 0.3;
   -moz-opacity: 0.3;
   filter:alpha(opacity=30);
+}
+
+/****************************************************************
+* login
+****************************************************************/
+/* header */
+#wrapper #content-wrapper #content #inner_wrap .post.log_in .header {
+  background:url(../images/header_log_in.png) no-repeat;
+  
+  height:15px;
+}
+/* form */
+#wrapper #content-wrapper #content #inner_wrap .post.log_in input {
+  background:#000;
+  
+  padding:3px;
+  margin:0 0 1px 0;
+  
+  border:1px solid #a56fa7;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  
+  color:#a56fa7;
+  font-size:11px;
 }
 
 /****************************************************************

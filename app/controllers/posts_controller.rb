@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  # before_filter :login_required, :except => [:show, :index]
+  before_filter :login_required, :except => [:show, :index]
   
   make_resourceful do
     actions :all

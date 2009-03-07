@@ -1,3 +1,4 @@
+<% @posts = Post.find(:all) %>
 <% div_for(post, :class => 'post') do %>
   <div class="header">
     <div class="date">
@@ -9,5 +10,11 @@
     </div>
     <div class="clearfix"></div>
   </div>
-  <%= simple_format h(post.body) %>
+  <% if !params[:id] %>
+    <% if @posts.first == post %>
+      <%= simple_format snippet(post.body, 50, "...#{link_to "Read more...", archive_path(post), :class => 'read_more'}") %>
+    <% end %>
+  <% else %>
+  <%= simple_format post.body %>
+  <% end %>
 <% end %>

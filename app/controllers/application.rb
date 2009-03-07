@@ -4,6 +4,8 @@
 class ApplicationController < ActionController::Base
   helper :all # include all helpers, all the time
   
+  include AuthenticatedSystem
+  
   layout 'application'
 
   # See ActionController::RequestForgeryProtection for details

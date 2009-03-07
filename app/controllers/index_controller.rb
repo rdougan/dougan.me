@@ -1,4 +1,6 @@
 class IndexController < ApplicationController
+  before_filter :login_required, :only => [:admin]
+  
   def index
     
   end
