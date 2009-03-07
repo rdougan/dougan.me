@@ -1,0 +1,6 @@
+development:
+  adapter: mysql
+  encoding: utf8
+  database: dougan_me
+  username: root
+  password: 
